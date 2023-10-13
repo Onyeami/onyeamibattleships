@@ -60,3 +60,29 @@ def computer_guess(size, guessed_cells):
 def check_ship_hit(guess, grid):
     row, col = guess
     return grid[row][col] == 's'
+
+# Function to play the game
+def play_game(size, num_ships, level, time_limit):
+    size = get_user_input("Enter the grid size (e.g., 5 for a 5x5 grid): ", type_=int, min_=1)
+    num_ships = get_user_input("Enter the number of ships: ", type_=int, min_=1, max_=size * size)
+    player_score = 0
+    computer_score = 0
+    player_grid = create_grid(size)
+    computer_grid = create_grid(size)
+    place_ships(player_grid, num_ships)
+    place_ships(computer_grid, num_ships)
+    print("Welcome to Battleships!")
+    print("Try to sink all the ships.")
+    print("Your grid:")
+    print_grid(player_grid)
+    turns = 0
+    player_guessed_cells = set()
+    computer_guessed_cells = set()
+    player_hits = 0
+    player_misses = 0
+    computer_hits = 0
+    computer_misses = 0
+    player_ships = num_ships
+    computer_ships = num_ships
+    game_history = []
+    in_game_menu = False  # Flag to indicate whether in-game menu is active
