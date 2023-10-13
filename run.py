@@ -101,9 +101,9 @@ def play_game(size, num_ships, level, time_limit):
             # Player's turn
             print("Player's turn:")
             start_time = time.time()
-            guess = input
-            ("Enter your guess(e.g., A1)
-             or type 'status' to check the current status: ").upper()
+            guess = input(
+                "Enter your guess(e.g., A1) or type 'status' to check status: "
+            ).upper()
 
             if guess == 'STATUS':
                 display_game_status(
