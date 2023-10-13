@@ -227,3 +227,40 @@ def play_game(size, num_ships, level, time_limit):
     if play_again.lower() != "y":
         print("Thank you for playing Battleships!")
         return
+
+
+# Function to display the status
+def display_game_status(
+        player_hits, player_misses, player_ships, computer_hits,
+        computer_misses, computer_ships
+     ):
+    print("Current Game Status:")
+    print("Player Hits:", player_hits)
+    print("Player Misses:", player_misses)
+    print("Player Remaining Ships:", player_ships)
+    print("Computer Hits:", computer_hits)
+    print("Computer Misses:", computer_misses)
+    print("Computer Remaining Ships:", computer_ships)
+
+
+# Function to create the difficulty level
+def main():
+    level = 1  # Default difficulty level (1: Easy, 2: Medium, 3: Hard)
+    time_limits = {1: 30, 2: 20, 3: 10}  # Time limit for each difficulty level
+
+    while True:
+        main_menu()
+        choice = get_user_input(
+            "Enter your choice: ", type_=int, min_=1, max_=3
+        )
+
+        if choice == 1:
+            play_game()
+        elif choice == 2:
+            difficulty_menu()
+            level = get_user_input(
+                "Select difficulty level: ", type_=int, min_=1, max_=3
+            )
+        elif choice == 3:
+            print("Thank you for playing Battleships!")
+            break
