@@ -31,7 +31,32 @@ def place_ships(grid, num_ships):
     for _ in range(num_ships):
         ship_row = random.randint(0, size - 1)
         ship_col = random.randint(0, size - 1)
+        # Ensure not to place a ship on top of another
         while grid[ship_row][ship_col] == 's':
             ship_row = random.randint(0, size - 1)
             ship_col = random.randint(0, size - 1)
-        grid[ship_row][ship_col] = 's'
+        grid[ship_row][ship_col] = 's'  # Place the ship
+
+# Function to check if a guess is within the grid boundaries
+def is_valid_guess(guess, size):
+    row, col = guess
+    return row >= 0 and row < size and col >= 0 and col < size
+
+# Function to check if a guess hits a ship
+def is_hit(guess, grid):
+    row, col = guess
+    return grid[row][col] == 's'
+
+# Function for the computer's turn to guess
+def computer_guess(size, guessed_cells):
+    while True:
+        guess_row = random.randint(0, size-1)
+        guess_col = random.randint(0, size-1)
+        guess = (guess_row, guess_col)
+        if guess not in guessed_cells:
+            return guess
+
+# Function to check if a computer hits a ship
+def check_ship_hit(guess, grid):
+    row, col = guess
+    return grid[row][col] == 's'
