@@ -139,3 +139,91 @@ def play_game(size, num_ships, level, time_limit):
                     player_hits += 1
                     computer_ships -= 1
                     computer_grid[guess_row][guess_col] = 'x'
+                else:
+                    print("You missed!")
+                    player_misses += 1
+                    player_grid[guess_row][guess_col] = 'x'
+
+                turns += 1
+                print("Computer's grid:")
+                print_grid(computer_grid)
+
+                if player_ships == 0 or computer_ships == 0:
+                    break
+
+        # Computer's turn
+        print("Computer's turn:")
+        start_time = time.time()
+
+        # Add a delay for suspense
+        time.sleep(1)
+
+        guess_coords = computer_guess(size, computer_guessed_cells)
+
+        elapsed_time = time.time() - start_time
+
+        if elapsed_time > time_limit:
+            print("Time's up! Your turn again.")
+            continue
+
+        if guess_coords in computer_guessed_cells:
+            continue
+
+        computer_guessed_cells.add(guess_coords)
+        game_history.append(("Computer", guess_coords))
+
+        if is_hit(guess_coords, player_grid):
+            print("Computer hit one of your ships!")
+            computer_score += 1
+            computer_hits += 1
+            player_ships -= 1
+            player_grid[guess_coords[0]][guess_coords[1]] = 'x'
+        else:
+            print("Computer missed!")
+            computer_misses += 1
+            player_grid[guess_coords[0]][guess_coords[1]] = 'o'
+
+        turns += 1
+        print("Your grid:")
+        print_grid(player_grid)
+
+        if player_ships == 0 or computer_ships == 0:
+            break
+
+    # Determine the winner as before
+    if player_score > computer_score:
+        winner = "Player"
+    elif computer_score > player_score:
+        winner = "Computer"
+    else:
+        winner = "Nobody"  # It's a tie
+
+    print("Game over!")
+    print("Player score:", player_score)
+    print("Computer score:", computer_score)
+    print("Player hits:", player_hits)
+    print("Player misses:", player_misses)
+    print("Player remaining ships:", player_ships)
+    print("Computer hits:", computer_hits)
+    print("Computer misses:", computer_misses)
+    print("Computer remaining ships:", computer_ships)
+    print("Winner:", winner)
+
+    print("Game history:")
+    for move in game_history:
+        print(move[0], "guessed", move[1])
+        if move[0] == "Player":
+            if is_hit(move[1], computer_grid):
+                print("Player hit a ship!")
+            else:
+                print("Player missed!")
+        else:
+            if is_hit(move[1], player_grid):
+                print("Computer hit one of your ships!")
+            else:
+                print("Computer missed!")
+
+    play_again = input("Do you want to play again? (y/n): ")
+    if play_again.lower() != "y":
+        print("Thank you for playing Battleships!")
+        return
