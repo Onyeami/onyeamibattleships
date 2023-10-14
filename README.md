@@ -119,7 +119,8 @@ The game consists of:
 
 ## Features
 
- - ## Start the game
+ - Start the game:
+
 On the menu page, the player is prompted to choose options  1 through 3.
 
 ![Menu Page](images/readme/menu-page.png)
@@ -137,20 +138,17 @@ option 2 is to play the medium level and option 3 is for the hard level.
 Testing and Validation is viewed [here](images/TESTING.md)
 
 ## Deployment
-git add .:
-- This command was used to stage changes for the next commit. Stage changes is a crucial step before committing codes to the Git repository.
+git add:
+- This command is used to stage changes for the next commit. Stage changes is a crucial step before committing codes to the Git repository.
+
 git commit:
- - 
+- The command is used to create a commit when changes are staged. A commit message using the '-m' flag to describe what the commit accomplishes.
 
-Conclusion
-Enjoy your Battleship Game experience! With strategic thinking and a bit of luck, you can lead your fleet to victory and dominate the high seas. Whether you prefer manual ship placement or a randomized challenge, this game offers plenty of excitement for all types of players. Get ready to engage in epic naval battles and emerge as the ultimate commander of the seas!
-
-
-
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+git push:
+- This command is used in Git to send the local changes to a remote repository, hosted on a GitHub remote server.
 
 ## Creating the Heroku app
+Sign up for Heroku's account at [Heroku's website](https://www.heroku.com)
 
 When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
