@@ -135,7 +135,8 @@ option 2 is to play the medium level and option 3 is for the hard level.
 ![Difficult Level](images/readme/difficult-level.png)
 
 ## Testing
-Testing and Validation is viewed [here](images/TESTING.md)
+My file was validated using [Python Linter](https://pep8ci.herokuapp.com/).
+There was no errors
 
 ## Deployment
 git add:
