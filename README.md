@@ -138,6 +138,19 @@ option 2 is to play the medium level and option 3 is for the hard level.
 My file was validated using [Python Linter](https://pep8ci.herokuapp.com/).
 There was no errors
 
+![File Validation](images/testing/python-linter1.png)
+
+Manual Testing were performed mainly
+
+Testing when a player makes a invalid guess
+![Invalid guess](images/testing/invalid-input.png)
+
+Testing when a player wastes timing in guessing
+![Time Up](images/testing/testing-timing.png)
+
+Testing when a player chose coordinates outside the grid
+![Grid](images/testing/testing-grid.png)
+
 ## Deployment
 git add:
 - This command is used to stage changes for the next commit. Stage changes is a crucial step before committing codes to the Git repository.
