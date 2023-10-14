@@ -20,7 +20,7 @@ on grids. It is a python command-line project.
  - [Technologies](#technologies-used)
  - [Features](#features)
  - [Testing](#testing)
- - [Deployment]
+ - [Deployment](#deployment)
 
 ## Project Objectives
   The objective of the Onyeami's Battleships game is to defeat your opponent by sinking all their ships before 
@@ -148,16 +148,13 @@ git push:
 - This command is used in Git to send the local changes to a remote repository, hosted on a GitHub remote server.
 
 ## Creating the Heroku app
-Sign up for Heroku's account at [Heroku's website](https://www.heroku.com)
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
+- Sign up for Heroku's account at [Heroku's website](https://www.heroku.com)
+- Select create new app from the dashboard, then go to the settings tab
+- In settings tab, you will need to add two buildpacks. The ordering is as follows:
 1. `heroku/python`
 2. `heroku/nodejs`
 
 You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
 
 Connect your GitHub repository and deploy as normal.
 
@@ -165,6 +162,6 @@ Connect your GitHub repository and deploy as normal.
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
----
-
-Happy coding!
+## Credits
+Youtube and Google chrome were used extensively in this research
+I have to give thanks to my mentor, Mr Narender for his valuable advise.
