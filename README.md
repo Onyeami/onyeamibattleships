@@ -134,6 +134,13 @@ option 2 is to play the medium level and option 3 is for the hard level.
 ![Difficult Level](images/readme/difficult-level.png)
 
 ## Testing
+Testing and Validation is viewed [here](images/TESTING.md)
+
+## Deployment
+git add .:
+- This command was used to stage changes for the next commit. Stage changes is a crucial step before committing codes to the Git repository.
+git commit:
+ - 
 
 Conclusion
 Enjoy your Battleship Game experience! With strategic thinking and a bit of luck, you can lead your fleet to victory and dominate the high seas. Whether you prefer manual ship placement or a randomized challenge, this game offers plenty of excitement for all types of players. Get ready to engage in epic naval battles and emerge as the ultimate commander of the seas!
