@@ -128,6 +128,8 @@ Option 1 is to start the game, option 2 to select the difficult level, and optio
 
 ![Start Game](images/readme/start-game.png)
 
+## Testing
+
 Conclusion
 Enjoy your Battleship Game experience! With strategic thinking and a bit of luck, you can lead your fleet to victory and dominate the high seas. Whether you prefer manual ship placement or a randomized challenge, this game offers plenty of excitement for all types of players. Get ready to engage in epic naval battles and emerge as the ultimate commander of the seas!
 
