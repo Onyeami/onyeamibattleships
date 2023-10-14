@@ -224,7 +224,7 @@ def play_game(size, num_ships, level, time_limit):
 
     play_again = input("Do you want to play again? (y/n): ")
     if play_again.lower() != "y":
-        print("Thank you for playing Battleships!")
+        print("Thank you for playing Onyeami's Battleships game!")
         return
 
 

@@ -2,7 +2,9 @@
 
 Here is the live link - [Onyeami Battleships game](https://onyeami-battleships-a7717c6967d2.herokuapp.com/)
 
-![ScreenShot]()
+![ScreenShot](images/readme/mockup1.png)
+
+(Developer: Charles Onye)
 
 ## Introduction
 This is Onyeami's Battleships Game. This is an exciting game of naval warfare, you will be the captain that will command and
@@ -42,36 +44,36 @@ their ships before they sink yours.
 ## User Story
 1. ## _First Time Player_ 
 
-- A first-time player would prefer to start with an easy-to-play game. Here, they have the opportunity to begin a new game and set up their ships.
-  They will be prompted to either start the game or choose the desired difficulty level.
+- A first-time player would prefer to start with an easy-to-play game. Here, he has the opportunity to begin a new game and set up his ships.
+  He will be prompted to either start the game or choose the desired difficulty level.
 
 - A first-time player would appreciate clear game instructions. Here, the instructions are straightforward. If the player selects option 2 from the menu,
-  they will have the choice to play an easy, medium, or hard game. The waiting time varies depending on the chosen option.
+  he will have the option to play an easy, medium, or hard game. The waiting time varies depending on the chosen option.
 
-- A first-time player will have the opportunity to become accustomed to the game. Here, they have the privilege of playing the easy level, where the waiting
-  time to select their coordinates is longer (30 seconds).
+- A first-time player will have the opportunity to become accustomed to the game. Here, he will have the privilege of playing the easy level, where the waiting
+  time to select his coordinates is longer (30 seconds).
 
 2. ## _Returning Player's Goals_
 
  - A returning will be aiming at perfecting in the game. He will definitely wants to play at least the medium, where he has 20 seconds or less to make a choice. His
    objective is to select a location on the opponent's grid and guess whether there is a ship in that position. If there is a ship, it's a hit. The returning player's goal is to hit and sink all of the opponent's ships.
    
- - The returning player at this stage will want to employ strategic thinking that helps maximize their chances of success. They must understand factors such as
+ - The returning player at this stage will want to employ strategic thinking that helps maximize his chances of success. He must understand factors such as
    ship placement, patterns of play, and information gleaned from previous guesses (if any) to make educated guesses and ultimately sink the opponent's ships efficiently.
 
  - The returning player, just like the first-time player and the frequent player, will have the option to check the current game status while playing. The 
-   game should then display information such as the number of hits, misses, and the remaining ships for both the player and their opponent.
+   game should then display information such as the number of hits, misses, and the remaining ships for both the player and his opponent.
 
 3. ## _Frequent player Objectives_
 
- - The frequent player will definitely want to master the game's artistry and tackle the hard level, where they have only 10 seconds to choose their coordinates.
-   They aim to sink the opponent's ships faster and win the game.
+ - The frequent player will definitely want to master the game's artistry and tackle the hard level, where he has only 10 seconds to choose he coordinates.
+   He aims to sink the opponent's ships faster and win the game.
 
- - Regular players of Battleship often strive to enhance their strategic thinking and predictive skills in order to become more effective at winning the game.
+ - Regular players of Battleships game often strive to enhance their strategic thinking and predictive skills in order to become more effective at winning the game.
 
 ## Design
 
-- The Onyeami Battleships game is a classic two-player strategy game where player hides his fleet of ships on a grid and attempts to sink his opponent's fleet
+- The Onyeami Battleships game is a classic two-player strategy game where a player hides his fleet of ships on a grid and attempts to sink his opponent's fleet
   by guessing coordinates.
 
 ## Rules
@@ -109,9 +111,9 @@ The game consists of:
 3. Youtube:
    - Youtube was used for further researches and troubleshooting
 4. Heroku App
-  - Heroku account was created for the deployment of the project
+   - Heroku account was created for the deployment of the project
 
-![ScreenShot](docs/readme-images/python-linter.png)
+![ScreenShot](images/readme/python-linter1.png)
 
 
 Conclusion
