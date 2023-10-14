@@ -119,7 +119,14 @@ The game consists of:
 
 ## Features
 
-**Start the game**
+ - ## Start the game
+On the menu page, the player is prompted to choose options  1 through 3.
+
+![Menu Page](images/readme/menu-page.png)
+
+Option 1 is to start the game, option 2 to select the difficult level, and option 3 is to quit.
+
+![Start Game](images/readme/start-game.png)
 
 Conclusion
 Enjoy your Battleship Game experience! With strategic thinking and a bit of luck, you can lead your fleet to victory and dominate the high seas. Whether you prefer manual ship placement or a randomized challenge, this game offers plenty of excitement for all types of players. Get ready to engage in epic naval battles and emerge as the ultimate commander of the seas!
