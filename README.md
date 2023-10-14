@@ -142,13 +142,16 @@ There was no errors
 
 Manual Testing were performed mainly
 
-Testing when a player makes a invalid guess
+- Testing when a player makes a invalid guess
+
 ![Invalid guess](images/testing/invalid-input.png)
 
-Testing when a player wastes timing in guessing
+- Testing when a player wastes timing in guessing
+
 ![Time Up](images/testing/testing-timing.png)
 
-Testing when a player chose coordinates outside the grid
+- Testing when a player chose coordinates outside the grid
+
 ![Grid](images/testing/testing-grid.png)
 
 ## Deployment
