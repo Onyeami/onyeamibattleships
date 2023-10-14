@@ -136,7 +136,7 @@ option 2 is to play the medium level and option 3 is for the hard level.
 
 ## Testing
 My file was validated using [Python Linter](https://pep8ci.herokuapp.com/).
-There was no errors
+There were no errors
 
 ![File Validation](images/testing/python-linter1.png)
 
