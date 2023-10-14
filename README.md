@@ -19,7 +19,7 @@ on grids. It is a python command-line project.
  - [Design](#design)
  - [Technologies](#technologies-used)
  - [Features](#features)
- - [Testing]
+ - [Testing](#testing)
  - [Deployment]
 
 ## Project Objectives
@@ -127,6 +127,11 @@ On the menu page, the player is prompted to choose options  1 through 3.
 Option 1 is to start the game, option 2 to select the difficult level, and option 3 is to quit.
 
 ![Start Game](images/readme/start-game.png)
+
+After selecting option 2, you can choose the level you want to play: option 1 is to play the easy level,
+option 2 is to play the medium level and option 3 is for the hard level.
+
+![Difficult Level](images/readme/difficult-level.png)
 
 ## Testing
 
