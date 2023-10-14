@@ -17,8 +17,9 @@ on grids. It is a python command-line project.
  - [Project Objectives](#project-objectives)
  - [User Experience](#user-experience)
  - [Design](#design)
- - [Features]
- - [Technology]
+ - [Technologies](#technologies-used)
+ - [Features](#features)
+ - [Testing]
  - [Deployment]
 
 ## Project Objectives
@@ -86,6 +87,7 @@ their ships before they sink yours.
 - From here, the players need to select either option 1 for easy level, option 2 for medium level and option 3 for hard level
 - Players have 30 seconds waiting time to make a guess for the easy level, 20 seconds for medium level and 10 seconds for the hard level
 - The first player to sink all of their opponent's ships wins the game.
+- Click on RUN PROGRAM tab if you want to start a new game.
 
 **Objectives**: The objective of the game is to sink all of your opponent's ships before they sink yours.
 
@@ -110,17 +112,20 @@ The game consists of:
     - GitHub is used to store the projects code after being pushed from Git.
 3. Youtube:
    - Youtube was used for further researches and troubleshooting
+4. Python:
+   - The code was placed in the `run.py` file
 4. Heroku App
    - Heroku account was created for the deployment of the project
 
-![ScreenShot](images/readme/python-linter1.png)
+## Features
 
+**Start the game**
 
 Conclusion
 Enjoy your Battleship Game experience! With strategic thinking and a bit of luck, you can lead your fleet to victory and dominate the high seas. Whether you prefer manual ship placement or a randomized challenge, this game offers plenty of excitement for all types of players. Get ready to engage in epic naval battles and emerge as the ultimate commander of the seas!
 
 
-- Your code must be placed in the `run.py` file
+
 - Your dependencies must be placed in the `requirements.txt` file
 - Do not edit any of the other files or your code may not deploy properly
 
