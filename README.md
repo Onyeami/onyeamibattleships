@@ -2,6 +2,8 @@
 
 Here is the live link - [Onyeami Battleships game](https://onyeami-battleships-a7717c6967d2.herokuapp.com/)
 
+![ScreenShot]()
+
 ## Introduction
 This is Onyeami's Battleships Game. This is an exciting game of naval warfare, you will be the captain that will command and
 strategically deploy your ships, and engage in thrilling battles on the high seas. Let's do it. This game is designed to be played 
